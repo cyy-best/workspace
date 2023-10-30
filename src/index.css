@@ -11,3 +11,101 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+  display: flex;
+}
+
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.menu-container {
+  flex: 2;
+  background-color: #474646;
+  border: 1px solid #ccc;
+  color: #fff;
+  margin: 24px auto 16px 16px;
+  height: 90vh;
+  
+}
+
+
+.item-hover {
+  filter: brightness(1.2);
+}
+
+.hovered-menu-item {
+  cursor: pointer;
+}
+
+
+.menu-item {
+  list-style: none;
+  /* 去掉列表项的默认样式 */
+  margin: 5px 0;
+  cursor: pointer;
+  color: #fff;
+  /* 文本颜色 */
+  font-size: 16px;
+  transition: background-color 0.3s;
+  padding: 8px;
+  /* Add padding to each menu item */
+  list-style: none;
+}
+
+.menu-item.selected-menu-item {
+  background-color: #0074b2; /* Blue background for selected items */
+    color: #fff;
+  /* 选定项的背景颜色 */
+}
+
+.menu-item.item-hover {
+  background-color: #e2e2e2; /* Light gray background on hover */
+    cursor: pointer;
+  /* 鼠标悬停项的背景颜色 */
+}
+
+
+.menu-container li:hover {
+  background-color: #f8d166;
+  /* 这里可以使用你想要的背景颜色 */
+  cursor: pointer;
+}
+
+.workspace {
+  flex: 8;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.selected-div {
+  border: 3px dotted gray;
+  filter: brightness(1.2);
+}
+
+.normal-div:hover {
+  filter: brightness(1.2);
+}
+
+
+.settings {
+  flex: 2;
+  overflow: auto;
+  margin: 24px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.settings label {
+  font-size: 12px;
+}
+
+.settings .setting-input input {
+  width: 40px;
+}
